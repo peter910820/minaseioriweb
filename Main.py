@@ -1,37 +1,34 @@
-import uvicorn
-from fastapi import FastAPI, Request, HTTPException, Form, Cookie, Response
-from fastapi.responses import HTMLResponse
-from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
-from fastapi.responses import RedirectResponse
+from flask import Flask
+from flask import render_template
 
 import os
 
-app = FastAPI()
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
+app = Flask(__name__)
+
+# app.mount("/static", StaticFiles(directory="static"), name="static")
+# templates = Jinja2Templates(directory="templates")
 
 # 網頁端 #
-@app.get("/", response_class=HTMLResponse)
-async def root(request: Request):
-    return templates.TemplateResponse('index.html',{'request':request})
+@app.route("/", methods=['GET'])
+def home_page():
+    return render_template("index.html")
 
-@app.get("/note", response_class=HTMLResponse)
-async def root(request: Request):
-    return templates.TemplateResponse('note.html',{'request':request})
+@app.route("/note", methods=['GET'])
+def note_page():
+    return render_template("note.html")
 
-@app.get("/article", response_class=HTMLResponse)
-async def root(request: Request):
-    return templates.TemplateResponse('/article.html',{'request':request})
+@app.route("/article", methods=['GET'])
+def article_page():
+    return render_template("article.html")
 
-@app.get("/article/0810_PJSK", response_class=HTMLResponse)
-async def root(request: Request):
-    return templates.TemplateResponse('/article/0810_PJSK.html',{'request':request})
+@app.route("/article/0810_PJSK", methods=['GET'])
+def article_0810_PJSK():
+    return render_template("/article/0810_PJSK.html")
 
-@app.get("/article/0817_TenkafuMA", response_class=HTMLResponse)
-async def root(request: Request):
-    return templates.TemplateResponse('/article/0817_TenkafuMA.html',{'request':request})
+@app.route("/article/0817_TenkafuMA.html", methods=['GET'])
+def article_0817_TenkafuMA():
+    return render_template("/article/0817_TenkafuMA.html")
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
-    uvicorn.run("Main:app", host="0.0.0.0", port=port, reload=True)
+    app.run(host='127.0.0.1', port=port)
