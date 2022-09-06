@@ -4,6 +4,7 @@ Here is a person who wants to use python to build a personal website.Project for
 
 * 2022/08/27 create this project
 * 2022/09/06 change architecture to flask and update background image.
+* 2022/09/06 push to koyeb.
 
 ***
 
@@ -11,6 +12,7 @@ Here is a person who wants to use python to build a personal website.Project for
 
 * 2022/08/27 創建此專案
 * 2022/09/06 將架構改為flask，並更新背景圖片。
+* 2022/09/06 將專案託管到koyeb。
 
 ![md_image](md_image.png)
 
