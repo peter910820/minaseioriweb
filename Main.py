@@ -5,9 +5,6 @@ import os
 
 app = Flask(__name__)
 
-# app.mount("/static", StaticFiles(directory="static"), name="static")
-# templates = Jinja2Templates(directory="templates")
-
 # 網頁端 #
 @app.route("/", methods=['GET'])
 def home_page():
@@ -25,7 +22,7 @@ def article_page():
 def article_0810_PJSK():
     return render_template("/article/0810_PJSK.html")
 
-@app.route("/article/0817_TenkafuMA.html", methods=['GET'])
+@app.route("/article/0817_TenkafuMA", methods=['GET'])
 def article_0817_TenkafuMA():
     return render_template("/article/0817_TenkafuMA.html")
 
