@@ -6,6 +6,7 @@ Here is a person who wants to use python to build a personal website.Project for
 * 2022/09/06 change architecture to flask and update background image.
 * 2022/09/06 push to koyeb.
 * 2022/09/06 Fine-tune the layout design structure to RWD, and significantly modify the layout structure.
+* 2022/09/11 complete the about page.
 
 ***
 
@@ -15,6 +16,7 @@ Here is a person who wants to use python to build a personal website.Project for
 * 2022/09/06 將架構改為flask，並更新背景圖片。
 * 2022/09/06 將專案託管到koyeb。
 * 2022/09/06 將版面設計架構微調成RWD，大幅修改版面結構。
+* 2022/09/11 完成關於頁面。
 
 ![md_image](md_image.png)
 
