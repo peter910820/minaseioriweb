@@ -7,6 +7,7 @@ Here is a person who wants to use python to build a personal website.Project for
 * 2022/09/06 push to koyeb.
 * 2022/09/06 Fine-tune the layout design structure to RWD, and significantly modify the layout structure.
 * 2022/09/11 complete the about page.
+* 2022/09/11 update four article page and update routing.
 
 ***
 
@@ -17,6 +18,7 @@ Here is a person who wants to use python to build a personal website.Project for
 * 2022/09/06 將專案託管到koyeb。
 * 2022/09/06 將版面設計架構微調成RWD，大幅修改版面結構。
 * 2022/09/11 完成關於頁面。
+* 2022/09/11 上傳四篇文章以及更新路由方式。
 
 ![md_image](md_image.png)
 

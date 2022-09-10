@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}港(台)版馬娘拆包{% endblock %}
+
+{% block main %}
+<div class="col-7">
+    <span class="about">
+        <h3>20220716-先傳初步認識好了</h3>
+        對，就如標題所說，這到底是甚麼營運模式，小萌的手法早就在巴哈傳得沸沸揚揚的了，
+        不過遊玩人數好像沒下降就是了，跟遊戲橘子一樣。<br>
+        反正資源包先抓出來，先來看一個比較有趣的東西:<br><br>
+        <img src="../../static/articleImage/UmaMusume-TaiwainVerison-unpacking/01.png" class="img-thumbnail"><br><br>
+        嗯?你跟我想的一樣嗎，我不知道ㄟ乖乖丟Google:<br><br>
+        <img src="../../static/articleImage/UmaMusume-TaiwainVerison-unpacking/02.png" class="img-thumbnail"><br><br>
+        恩，騰訊雲。好，不提了，來翻個資料，DB都翻過了，沒找到甚麼有趣的東西，
+        好像就這個可以拿出來講:<br><br>
+        <img src="../../static/articleImage/UmaMusume-TaiwainVerison-unpacking/03.png" class="img-thumbnail"><br><br>
+        路徑為:<br><br>
+        <code>com.komoe.kmumamusumegp\files\master\master.mdb</code><br><br>
+        用HxD可以看到這是SQlite格式，應該是放甚麼參數的，很多Table，我也不確定。<br><br>
+        <img src="../../static/articleImage/UmaMusume-TaiwainVerison-unpacking/04.png" class="img-thumbnail"><br><br>
+        一般多媒體檔在以下路徑，拆法也是AssetStudio，作法大同小異就不傳圖了:<br><br>
+        <code>com.komoe.kmumamusumegp\files\dat</code><br><br>
+        剩下的之後再處理，繼續掛列車(
+    </span><br><br>
+    <span class="date">by.SeaotterMS on 2022/7/16</span>
+</div>
+{% endblock %}

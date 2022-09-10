@@ -19,16 +19,12 @@ def article_page():
     return render_template("article.html")
 
 @app.route("/about", methods=['GET'])
-def about():
+def about_page():
     return render_template("/about.html")
 
-@app.route("/article/0810_PJSK", methods=['GET'])
-def article_0810_PJSK():
-    return render_template("/article/0810_PJSK.html")
-
-@app.route("/article/0817_TenkafuMA", methods=['GET'])
-def article_0817_TenkafuMA():
-    return render_template("/article/0817_TenkafuMA.html")
+@app.route('/article/<title>')
+def article(title):
+    return render_template(f"/article/{title}.html")
 
 if __name__ == "__main__":
     app.run()
