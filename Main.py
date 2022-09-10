@@ -18,6 +18,10 @@ def note_page():
 def article_page():
     return render_template("article.html")
 
+@app.route("/about", methods=['GET'])
+def about():
+    return render_template("/about.html")
+
 @app.route("/article/0810_PJSK", methods=['GET'])
 def article_0810_PJSK():
     return render_template("/article/0810_PJSK.html")
