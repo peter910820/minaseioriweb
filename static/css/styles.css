@@ -70,9 +70,7 @@ font-weight:bold;
     color: slateblue;
 }
 
-.bg-sky-blue{background-color: rgb(12, 155, 199);}
 .register{font-size: 30px;}
-.boldText{font-weight:bold;}
 .register2{font-size: 40px;font-weight:bold;}
 
 .timerSize{
@@ -114,9 +112,7 @@ font-weight:bold;
     font-weight: bold;
     font-family:'851MkPOP';
 }
-.button-align{
-    text-align: center;
-}
+
 .articleMain{
     border: 5px dashed cornflowerblue;
     margin-left: 100px;
@@ -128,12 +124,6 @@ font-weight:bold;
     font-style: italic;
     font-size:40px;
 }
-.resize {
-    width : auto;
-    width : 25px;
-    height : auto;
-    height : 25px;
-    }
 
 .noteText{
     font-size:  20px;
@@ -144,14 +134,6 @@ font-weight:bold;
     font-size:  30px;
     font-weight: bold;
     font-family:'851MkPOP';
-}
-.imageD{
-    width:30vw;
-    height:30vh;
-}
-.imageF{
-    font-size:10vw;
-    font-size:10vh;
 }
 
 .jumbotron {
