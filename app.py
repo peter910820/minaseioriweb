@@ -1,11 +1,8 @@
 from flask import Flask
 from flask import render_template
 
-import os
-
 app = Flask(__name__)
 
-# 網頁端 #
 @app.route("/", methods=['GET'])
 def home_page():
     return render_template("index.html")
@@ -26,5 +23,5 @@ def about_page():
 def article(title):
     return render_template(f"/article/{title}.html")
 
-if __name__ == "__main__":
-    app.run()
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
